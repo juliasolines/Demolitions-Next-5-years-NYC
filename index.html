@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8" />
+    <title> Mutating NYC </title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Geo:ital@0;1&family=Jersey+25&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+25&display=swap" rel="stylesheet">
+</head>
+<body class="Landing">
+    <div>
+        <h1>WHAT COULD THE NEXT 5 YEARS OF NEW YORK CITY’S DEMOLITIONS LOOK LIKE?</h1>
+        <p>The following map explores the 5 years of demolitions in NYC. </p>
+        <p>A MLM trained on data from 2010-2023 from the NYC Housing Databse, the NYC Pluto Database 
+            and the NYC Census satabase flagged buildings that could (with 70% accuracy) undergo
+            demolition from 2025-2030. Each gray circle represents a demolished construction. The
+            reasons for demolitions include year of building construction, rent cost, BBL, address, 
+            borough and tenant tax brackets. 
+        </p>
+        <h2> We encourage you to find buildings you know, buildings you care about and love, and 
+            protect them. Our homes are an extension of our bodies. We are our city, and it is being demolished. 
+        </h2>
+    </div>
+     <!-- <a id="pagebutton" href="main.html">MAP</a> -->
+     <button id="mapButton">MAP</button>
+
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const button = document.getElementById('mapButton');
+            if (button) {
+                button.addEventListener('click', function() {
+                    // This tells the browser to go to the 'main.html' file
+                    window.location.href = 'main.html';
+                });
+            }
+        });
+      </script>
+</body>
+
+

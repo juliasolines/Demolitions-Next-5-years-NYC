@@ -1,0 +1,95 @@
+
+/* 1. Mapbox Core CSS */
+@import url('https://api.mapbox.com/mapbox-gl-js/v3.4.0/mapbox-gl.css');
+
+/* 2. Custom CSS from your shared content */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    font-family: "Geo", sans-serif;
+    background-color: antiquewhite;
+    color: #000000;
+}
+
+h1{
+    font-size: 70px;
+    text-align: center;
+}
+
+p{
+    color: rgb(57, 57, 57);
+    font-family: "Jersey 25", sans-serif;
+    font-size: 25px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+h2{
+    font-family: "Jersey 25", sans-serif;
+    font-size: 40px;
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    border: 2px solid black;
+  font-family: "Geo", sans-serif;
+  color: rgb(255, 255, 255);
+  background-color: rgb(206, 165, 112);
+  font-size: 70px;
+
+}
+
+button:hover {
+     border: 2px solid black;
+  color: gray;
+  background-color: blanchedalmond;
+}
+
+body.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-family: "Geo", sans-serif;
+    background-color: antiquewhite;
+    color: #000000;
+}
+
+
+/* 3. Map Container Sizing (Critical for Mapbox to render) */
+#map {
+    width: 1200px;
+    height: 70vh; /* 70% of the viewport height */
+    min-height: 400px;
+}
+
+/* 4. Custom Button Style */
+.layer-toggle {
+    transition: background-color 0.2s;
+}
+
+#backButton {
+  font-family: "Geo", sans-serif;
+  color: rgb(255, 255, 255);
+  background-color: rgb(206, 165, 112);
+  font-size: 30px;
+}
+
+#backButton:hover {
+  border: 2px black;
+  color: gray;
+  background-color: blanchedalmond;
+}
+
+.filter-group {
+    font-size: 30px;
+}
+  
